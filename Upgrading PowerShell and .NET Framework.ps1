@@ -1,7 +1,7 @@
-﻿$url = "https://raw.githubusercontent.com/jborean93/ansible-windows/master/scripts/Upgrade-PowerShell.ps1"
+﻿$url = "https://raw.githubusercontent.com/Sanju7863/Ansible-Windows/master/Upgrade-PowerShell.ps1"
 $file = "$env:temp\Upgrade-PowerShell.ps1"
-$username = "vagrant"
-$password = "vagrant"
+$username = "Administrator"
+$password = "admin@123"
 
 (New-Object -TypeName System.Net.WebClient).DownloadFile($url, $file)
 Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force
